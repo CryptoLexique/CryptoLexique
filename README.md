@@ -4,7 +4,7 @@ Un lexique de tout ce qui est présent sur la blockchain !
 
 ### Contribution
 
-Vous retrouvez tout ce dont vous avez besoin pour contribuer à ce lexique dans le fichier [CONTRIBUTING](/CONTRIBUTING.md).
+Vous retrouvez tout ce dont vous avez besoin pour contribuer à ce lexique dans le fichier [CONTRIBUTING](CONTRIBUTING.md).
 
 
 ## Recherche
