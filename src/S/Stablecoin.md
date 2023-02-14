@@ -1,1 +1,0 @@
-Cryptomonnaie stable adossée à la valeur d’une monnaie FIAT
