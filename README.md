@@ -1,11 +1,3 @@
-<style>
-body {
-    background-color: black;
-    color: white;
-}
-</style>
-
-
 ## CryptoLexique
 Un lexique de tout ce qui est présent sur la blockchain !
 
