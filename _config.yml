@@ -2,3 +2,4 @@ name: CryptoLexique
 description: CryptoLexique est un dictionnaire de crypto-monnaies et de blockchain.
 url: "https://mattis44.github.io/CryptoLexique/"
 markdown: GFM
+encoding: utf-8
