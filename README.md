@@ -1,5 +1,10 @@
+<div align="center">
+
 ![CryptoLexique](/assets/CryptoLexique.gif)
+
 Un lexique de tout ce qui est présent sur la blockchain !
+
+</div>
 
 
 
