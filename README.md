@@ -1,50 +1,21 @@
-<div align="center">
 
 ![CryptoLexique](/assets/CryptoLexique.gif)
 
 Un lexique de tout ce qui est présent sur la blockchain !
 
-</div>
 
 
 
-<div align="center">
-  <h2>Recherche</h2>
-  <p> Par quoi commence le mot que vous recherchez ? </p>
-  <div>
-    <a href="/CryptoLexique/blob/main/src/A/index.md">A</a> |
-    <a href="/CryptoLexique/blob/main/src/B/index.md">B</a> |
-    <a href="/CryptoLexique/blob/main/src/C/index.md">C</a> |
-    <a href="/CryptoLexique/blob/main/src/D/index.md">D</a> |
-    <a href="/CryptoLexique/blob/main/src/E/index.md">E</a> |
-    <a href="/CryptoLexique/blob/main/src/F/index.md">F</a> |
-    <a href="/CryptoLexique/blob/main/src/G/index.md">G</a> |
-    <a href="/CryptoLexique/blob/main/src/H/index.md">H</a> |
-    <a href="/CryptoLexique/blob/main/src/I/index.md">I</a> |
-    <a href="/CryptoLexique/blob/main/src/J/index.md">J</a> |
-    <a href="/CryptoLexique/blob/main/src/K/index.md">K</a> |
-    <a href="/CryptoLexique/blob/main/src/L/index.md">L</a> |
-    <a href="/CryptoLexique/blob/main/src/M/index.md">M</a> |
-    <a href="/CryptoLexique/blob/main/src/N/index.md">N</a> |
-    <a href="/CryptoLexique/blob/main/src/O/index.md">O</a> |
-    <a href="/CryptoLexique/blob/main/src/P/index.md">P</a> |
-    <a href="/CryptoLexique/blob/main/src/Q/index.md">Q</a> |
-    <a href="/CryptoLexique/blob/main/src/R/index.md">R</a> |
-    <a href="/CryptoLexique/blob/main/src/S/index.md">S</a> |
-    <a href="/CryptoLexique/blob/main/src/T/index.md">T</a> |
-    <a href="/CryptoLexique/blob/main/src/U/index.md">U</a> |
-    <a href="/CryptoLexique/blob/main/src/V/index.md">V</a> |
-    <a href="/CryptoLexique/blob/main/src/W/index.md">W</a> |
-    <a href="/CryptoLexique/blob/main/src/X/index.md">X</a> |
-    <a href="/CryptoLexique/blob/main/src/Y/index.md">Y</a> |
-    <a href="/CryptoLexique/blob/main/src/Z/index.md">Z</a>
-  </div>
-</div>
 
-<div align="center">
+## Recherche
+Par quoi commence le mot que vous recherchez ? 
+    
+[A](src/A/index.md) | [B](src/B/index.md) | [C](src/C/index.md) | [D](src/D/index.md) | [E](src/E/index.md) | [F](src/F/index.md) | [G](src/G/index.md) | [H](src/H/index.md) | [I](src/I/index.md) | [J](src/J/index.md) | [K](src/K/index.md) | [L](src/L/index.md) | [M](src/M/index.md) | [N](src/N/index.md) | [O](src/O/index.md) | [P](src/P/index.md) | [Q](src/Q/index.md) | [R](src/R/index.md) | [S](src/S/index.md) | [T](src/T/index.md) | [U](src/U/index.md) | [V](src/V/index.md) | [W](src/W/index.md) | [X](src/X/index.md) | [Y](src/Y/index.md) | [Z](src/Z/index.md)
+    
 
 
-<h2> Contribution </h2>
+
+## Contribution
 
 Si vous souhaitez contribuer à ce lexique, merci de consulter le fichier [CONTRIBUTING](/.github/CONTRIBUTING.md).
 
@@ -57,6 +28,5 @@ Ce fichier contient des informations sur :
 
 Merci de prendre le temps de lire ces informations avant de proposer des modifications au lexique. Votre collaboration est très appréciée ! 🎉
 
-</div>
 
 
