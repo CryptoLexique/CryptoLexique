@@ -30,7 +30,7 @@ Exemple :
 
 4. **Créer** une pull request avec un titre correspondant aux [Normes de Commit](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13).
 
-Prenez exemple avec [Binance](/src/B/binance.md).
+> Prenez exemple avec [Binance](/src/B/binance.md).
 
 Une fois ces étapes validées, vous devrez attendre que votre contribution soit validée par un membre de l'équipe.
 
