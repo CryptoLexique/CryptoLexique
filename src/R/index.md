@@ -1,1 +1,1 @@
-![R](/assets/letters/R.png)
+![R](assets/letters/R.png)
