@@ -1,1 +1,1 @@
-![W](assets/letters/W.png)
+![W](../../assets/letters/W.png)

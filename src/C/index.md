@@ -1,3 +1,3 @@
-![C](assets/letters/C.png)
+![C](../../assets/letters/C.png)
 
 ### [CoinMarketCap](coinmarketcap.md)

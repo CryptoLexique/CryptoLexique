@@ -1,3 +1,3 @@
-![S](assets/letters/S.png)
+![S](../../assets/letters/S.png)
 
 ### [Stablecoin](stablecoin.md)
