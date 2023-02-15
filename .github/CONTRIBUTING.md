@@ -16,9 +16,9 @@ Pour contribuer à ce lexique, vous devez suivre les étapes suivantes :
     │   └── <nom>.md
     ├── ...
 ```
-    - Le titre de votre Lexique avec 3 '**#**' (h3)
-    - Un saut de ligne puis la description de votre Lexique avec '**>**' au début de la description
-    - Essayez d'ajouter des images pour que ce soit plus intuitif.
+- Le titre de votre Lexique avec 3 '**#**' (h3)
+- Un saut de ligne puis la description de votre Lexique avec '**>**' au début de la description
+- Essayez d'ajouter des images pour que ce soit plus intuitif.
 Exemple : 
 ```bash
 ###Binance
