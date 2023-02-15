@@ -8,7 +8,7 @@ Pour contribuer à ce lexique, vous devez suivre les étapes suivantes :
     - Le titre de votre Lexique avec 3 '**#**' (h3)
     - Un saut de ligne puis la description de votre Lexique avec '**>**' au début de la description
     - Exemple : 
-    ```js
+    ```bash
     ###Binance
 
     > Un exchange.
