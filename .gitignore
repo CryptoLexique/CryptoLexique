@@ -1,2 +1,5 @@
+# Basic ignore.
 node_modules
+
+# Cli ignore if ts compile to js.
 CLI/cli.js

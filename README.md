@@ -29,7 +29,7 @@ Merci de prendre le temps de lire ces informations avant de proposer des modific
 
 ### CLI
 
-Vous pouvez contribuer à ce lexique en passant par notre CLI. Pour cela, il vous suffit de suivre les étapes suivantes :
+Vous pouvez contribuer à ce lexique en passant par notre CLI. Pour cela, vous devrez avoir [NodeJS](https://nodejs.org/en/) d'installé puis il vous suffit de suivre les étapes suivantes :
 
 **Après avoir forké le repo** :
 
