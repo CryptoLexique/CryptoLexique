@@ -1,1 +1,1 @@
-> #### Lexique commençant par W
+![W](/assets/letters/W.png)
