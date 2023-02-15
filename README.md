@@ -8,7 +8,7 @@ Un lexique de tout ce qui est présent sur la blockchain !
 
 
 
-<div style="text-align:center;">
+<div align="center">
   <h2>Recherche</h2>
   <p> Par quoi commence le mot que vous recherchez ? </p>
   <div>
@@ -38,8 +38,11 @@ Un lexique de tout ce qui est présent sur la blockchain !
     <a href="/src/X/index.md">X</a> | 
     <a href="/src/Y/index.md">Y</a> | 
     <a href="/src/Z/index.md">Z</a>
+    </div>
   </div>
 </div>
+
+<div align="center">
 
 <div align="center">
 
