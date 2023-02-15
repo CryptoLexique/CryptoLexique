@@ -5,6 +5,17 @@ Pour contribuer à ce lexique, vous devez suivre les étapes suivantes :
 1. **Forker** le projet
 2. **Créer** une branche pour votre contribution
 3. **Ajouter** votre contribution avec comme template : 
+    - Un fichier <nom>.md dans le dossier approprié :
+
+```bash
+    ./src
+    ├── A
+    │
+    ├── B 
+    │   ├── index.md
+    │   └── <nom>.md
+    ├── ...
+```
     - Le titre de votre Lexique avec 3 '**#**' (h3)
     - Un saut de ligne puis la description de votre Lexique avec '**>**' au début de la description
     - Essayez d'ajouter des images pour que ce soit plus intuitif.
@@ -14,6 +25,7 @@ Exemple :
 
 > Un exchange.
 ```
+
 
 4. **Créer** une pull request avec un titre correspondant aux [Normes de Commit](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13)
 
