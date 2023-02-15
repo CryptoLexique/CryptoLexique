@@ -38,7 +38,6 @@ Un lexique de tout ce qui est présent sur la blockchain !
     <a href="/src/X/index.md">X</a> | 
     <a href="/src/Y/index.md">Y</a> | 
     <a href="/src/Z/index.md">Z</a>
-    </div>
   </div>
 </div>
 
