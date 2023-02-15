@@ -1,3 +1,3 @@
-> #### Lexique commençant par S
+![S](/assets/letters/S.png)
 
 ### [Stablecoin](stablecoin.md)

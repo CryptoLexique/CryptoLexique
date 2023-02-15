@@ -1,4 +1,4 @@
-> #### Lexique commençant par B
+![B](/assets/letters/B.png)
 
 ### [Binance](binance.md)
 
