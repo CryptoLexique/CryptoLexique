@@ -43,9 +43,8 @@ Un lexique de tout ce qui est présent sur la blockchain !
 
 <div align="center">
 
-<div align="center">
 
-## Contribution
+<h2> Contribution </h2>
 
 Si vous souhaitez contribuer à ce lexique, merci de consulter le fichier [CONTRIBUTING](/.github/CONTRIBUTING.md).
 
