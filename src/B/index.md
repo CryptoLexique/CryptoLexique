@@ -1,4 +1,4 @@
-![B](/assets/letters/B.png)
+![B](assets/letters/B.png)
 
 ### [Binance](binance.md)
 

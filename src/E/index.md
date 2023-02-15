@@ -1,3 +1,3 @@
-![E](/assets/letters/E.png)
+![E](assets/letters/E.png)
 
 ### [Exchange](exchange.md)
