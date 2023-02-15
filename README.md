@@ -1,4 +1,3 @@
-
 ![CryptoLexique](/assets/CryptoLexique.gif)
 
 Un lexique de tout ce qui est présent sur la blockchain !
@@ -14,7 +13,7 @@ Par quoi commence le mot que vous recherchez ?
 
 ## Contribution
 
-Si vous souhaitez contribuer à ce lexique, merci de consulter le fichier [CONTRIBUTING](/.github/CONTRIBUTING.md).
+Si vous souhaitez contribuer à ce lexique, merci de consulter le fichier [CONTRIBUTING](/.github/CONTRIBUTING.md) sur **GitHub**.
 
 Ce fichier contient des informations sur :
 
