@@ -37,12 +37,17 @@
         background-attachment: fixed;
         
       }
+      a {
+        color: white;
+        text-decoration: underline;
+      }      
     </style>
     {% include head-custom.html %}
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body" style="background-color:#373737;border-radius:10px;padding:10px 10px 10px 10px;">
 {% if page.url != "/" %}
+
 <a class="btn btn-outline-primary float-right" href="javascript:history.back()" role="button"><b>« Retour</b></a>
 
 <p>Choisir une autre lettre:</p>
