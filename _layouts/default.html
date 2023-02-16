@@ -27,12 +27,58 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <style>
+      body {
+	color: white;
+        background-color: black;
+        background-image: url('https://www.zupimages.net/up/23/07/py1e.png');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+      }
+    </style>
     {% include head-custom.html %}
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
 {% if page.url != "/" %}
-  <a href="javascript:history.back()">&raquo; Retour</a>
+<a class="btn btn-outline-primary float-right" href="javascript:history.back()" role="button"><b>« Retour</b></a>
+
+<p>Choisir une autre lettre:</p>
+
+<table>
+  <tbody>
+    <tr>
+<td><a href="https://cryptolexique.me/src/A/">A</a></td>
+<td><a href="https://cryptolexique.me/src/B/">B</a></td>
+<td><a href="https://cryptolexique.me/src/C/">C</a></td>
+<td><a href="https://cryptolexique.me/src/D/">D</a></td>
+<td><a href="https://cryptolexique.me/src/E/">E</a></td>
+<td><a href="https://cryptolexique.me/src/F/">F</a></td>
+<td><a href="https://cryptolexique.me/src/G/">G</a></td>
+<td><a href="https://cryptolexique.me/src/H/">H</a></td>
+<td><a href="https://cryptolexique.me/src/I/">I</a></td>
+<td><a href="https://cryptolexique.me/src/J/">J</a></td>
+<td><a href="https://cryptolexique.me/src/K/">K</a></td>
+<td><a href="https://cryptolexique.me/src/L/">L</a></td>
+<td><a href="https://cryptolexique.me/src/M/">M</a></td>
+<td><a href="https://cryptolexique.me/src/N/">N</a></td>
+<td><a href="https://cryptolexique.me/src/O/">O</a></td>
+<td><a href="https://cryptolexique.me/src/P/">P</a></td>
+<td><a href="https://cryptolexique.me/src/Q/">Q</a></td>
+<td><a href="https://cryptolexique.me/src/R/">R</a></td>
+<td><a href="https://cryptolexique.me/src/S/">S</a></td>
+<td><a href="https://cryptolexique.me/src/T/">T</a></td>
+<td><a href="https://cryptolexique.me/src/U/">U</a></td>
+<td><a href="https://cryptolexique.me/src/V/">V</a></td>
+<td><a href="https://cryptolexique.me/src/W/">W</a></td>
+<td><a href="https://cryptolexique.me/src/X/">X</a></td>
+<td><a href="https://cryptolexique.me/src/Y/">Y</a></td>
+<td><a href="https://cryptolexique.me/src/Z/">Z</a></td>
+    </tr>
+  </tbody>
+</table><br>
 {% endif %}
       
       {{ content }}
