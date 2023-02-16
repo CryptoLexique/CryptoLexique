@@ -3,7 +3,7 @@
 {% assign sorted_pages = (site.pages | sort: 'title') %}
 {% assign found = false %}
 {% for page in sorted_pages %}
-% if page.path contains 'src/H/' and page.path != 'src/H/index.md' %}
+{% if page.path contains 'src/H/' and page.path != 'src/H/index.md' %}
 {% assign found = true %}
 ### [{{ page.title | remove: '.md' }}]({{ page.url | relative_url }})
 {% endif %}
