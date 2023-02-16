@@ -10,5 +10,9 @@
 {% endfor %}
 
 {% unless found %}
-  Il n'y a pas encore de lexique.
+  ### Oups...
+
+Il n'y a pas encore de lexique commençant par cette lettre, mais tu peux être le premier à le faire !
+Rend toi sur la page [Contribuer](https://github.com/CryptoLexique/CryptoLexique/blob/main/.github/CONTRIBUTING.md) pour commencer l'aventure =)
+
 {% endunless %}
