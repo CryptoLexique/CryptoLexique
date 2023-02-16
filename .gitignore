@@ -3,3 +3,7 @@ node_modules
 
 # Cli ignore if ts compile to js.
 CLI/cli.js
+
+#Misc
+.vscode
+.idea
