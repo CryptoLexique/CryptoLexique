@@ -15,7 +15,7 @@ Par quoi commence le mot que vous recherchez ?
 
 ### Général
 
-Si vous souhaitez contribuer à ce lexique, merci de consulter le fichier [CONTRIBUTING](/.github/CONTRIBUTING.md) sur **GitHub**.
+Si vous souhaitez contribuer à ce lexique, merci de consulter le fichier [CONTRIBUTING](https://github.com/Mattis44/CryptoLexique/blob/main/.github/CONTRIBUTING.md).
 
 Ce fichier contient des informations sur :
 
