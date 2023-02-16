@@ -37,10 +37,12 @@
         background-attachment: fixed;
         
       }
+      p {
+        color: #999999;
+      }
       {% if page.url != "/" %}
       a {
         color: white;
-        text-decoration: underline;
       }
       {% endif %}
       {% if page.url == "/" %}
@@ -56,7 +58,7 @@
       .return {
         color: black;
         text-decoration: underline;
-      }    
+      }
     </style>
     {% include head-custom.html %}
   </head>
