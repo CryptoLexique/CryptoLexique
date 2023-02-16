@@ -13,9 +13,9 @@ PAS AUTOMATIQUEMENT GENERE
 AUTOMATIQUEMENT GENERE
 
 
-{%- for page in site.pages -%}
-{%- if page.path contains 'src/B/' and page.path != 'src/B/index.md' -%}
+{% for page in site.pages %}
+{% if page.path contains 'src/B/' and page.path != 'src/B/index.md' %}
 ### [{{ page.title }}]({{ page.url | relative_url }})
-{%- endif -%}
-{%- endfor -%}
+{% endif %}
+{% endfor %}
 
