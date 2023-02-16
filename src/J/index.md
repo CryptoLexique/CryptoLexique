@@ -3,10 +3,10 @@
 {% assign sorted_pages = (site.pages | sort: 'title') %}
 {% assign found = false %}
 {% for page in sorted_pages %}
-  {% if page.path contains 'src/J/' and page.path != 'src/J/index.md' %}
-    {% assign found = true %}
-    ### [{{ page.title | remove: '.md' }}]({{ page.url | relative_url }})
-  {% endif %}
+{% if page.path contains 'src/J/' and page.path != 'src/J/index.md' %}
+{% assign found = true %}
+### [{{ page.title | remove: '.md' }}]({{ page.url | relative_url }})
+{% endif %}
 {% endfor %}
 
 {% unless found %}
