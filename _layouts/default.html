@@ -37,13 +37,21 @@
         background-attachment: fixed;
         
       }
+      {% if page.url != "/" %}
       a {
-        color: black;
-        text-decoration: underline;
-      }      
-      .url {
         color: white;
         text-decoration: underline;
+      }
+      {% endif %}
+      {% if page.url == "/" %}
+      a {
+        color: black;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      {% endif %}
+      .url {
+        color: black;
       }      
     </style>
     {% include head-custom.html %}
