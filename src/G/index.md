@@ -1,1 +1,1 @@
-> #### Lexique commençant par G
+![G](../../assets/letters/G.png)

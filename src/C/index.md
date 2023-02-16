@@ -1,3 +1,3 @@
-> #### Lexique commençant par C
+![C](../../assets/letters/C.png)
 
 ### [CoinMarketCap](coinmarketcap.md)

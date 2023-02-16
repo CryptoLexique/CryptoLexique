@@ -1,1 +1,1 @@
-> #### Lexique commençant par R
+![R](../../assets/letters/R.png)

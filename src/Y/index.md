@@ -1,1 +1,1 @@
-> #### Lexique commençant par Y
+![Y](../../assets/letters/Y.png)

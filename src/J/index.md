@@ -1,1 +1,1 @@
-> #### Lexique commençant par J
+![J](../../assets/letters/J.png)

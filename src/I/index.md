@@ -1,1 +1,1 @@
-> #### Lexique commençant par I
+![I](../../assets/letters/I.png)

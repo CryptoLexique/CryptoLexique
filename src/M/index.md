@@ -1,1 +1,3 @@
-> #### Lexique commençant par M
+![M](../../assets/letters/M.png)
+
+### [Mineur](mineur.md)

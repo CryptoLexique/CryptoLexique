@@ -1,1 +1,3 @@
-> #### Lexique commençant par K
+![K](../../assets/letters/K.png)
+
+### [KYC](kyc.md)
