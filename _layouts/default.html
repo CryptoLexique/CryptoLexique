@@ -23,12 +23,19 @@
   <meta name="theme-color" content="#501ccc">
   <meta name="twitter:card" content="summary_large_image">
 
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <style>
+  body {
+      font-family: 'Roboto';font-size: 22px;
+  }
+  </style>
+
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
   </head>
   <body>
-    <div class="container-lg px-3 my-5 markdown-body">
+    <div class="container-lg px-3 my-5">
 
       {{ content }}
 
