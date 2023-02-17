@@ -133,8 +133,8 @@
       
       {{ content }}
 
-<img src="" id="authorimg" height="80" style="display: none;"	/>
-<span id="author" style="display: none;"></span>
+<span id="imgauth"></span>
+<span id="author"></span>
       
     </div>
 
@@ -177,9 +177,7 @@ if (path.match(/^\/src\/[^\/]+\/[^\/]+\.html$/)) {
       var authorLogin = lastCommit.author.login;
     var authorImage = lastCommit.author.avatar_url;
     $("#author").text("Merci a <b>"+ authorLogin +"</b> d'avoir contribué à cet ajout !");
-    $("#authorimg").attr('src', authorImage);
-    document.getElementById("author").classList.add("visible");
-    document.getElementById("authorimg").classList.add("visible");
+    $("#imgauth").text("<img src='"+ authorImage +"' id='authorimg' height='80'/>");
     },
     error: function(error) {
       console.log(error);
