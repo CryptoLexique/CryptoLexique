@@ -94,14 +94,7 @@
 
 
 
-<a class="return float-right" href="{% assign alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" | split: "" %}
-{% for letter in alphabet %}
-    {% if page.url == "/src/{{ letter }}/" %}
-    https://cryptolexique.me/
-    {% else %}
-    ../
-    {% endif %}
-{% endfor %}" role="button"><b>« Retour</b></a>
+<span id="linkreturn"></span>
 
 <p>Choisir une autre lettre:</p>
 
@@ -168,6 +161,20 @@
       const dateDuJour = `${moisEnFrancais} ${annee}`;
       
       document.getElementById("dateDuJour").textContent = dateDuJour;
+
+      var currentUrl = window.location.href;
+
+      var urlsAlphabet = [];
+      for (var i = 65; i <= 90; i++) {
+        var letter = String.fromCharCode(i);
+        urlsAlphabet.push("https://cryptolexique.me/src/" + letter + "/");
+      }
+
+      if (urlsAlphabet.includes(currentUrl)) {
+        var linkreturn = '<a class="return float-right" href="https://cryptolexique.me/" role="button"><b>« Retour</b></a>';
+      } else {
+        var linkreturn = '<a class="return float-right" href="../" role="button"><b>« Retour</b></a>';
+      }
       </script>
     </sript>
     <svg class="wavebg"
