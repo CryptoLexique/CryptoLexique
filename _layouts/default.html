@@ -94,12 +94,19 @@
 
 <span id="linkreturn"></span>
 
+{% for folder in site.static_files %}
+  {% if folder.path contains 'src/' %}
+    {% assign folder_name = folder.path | split: '/' | last %}
+    <a class="return float-right" href="{{ folder_name }}" role="button"><b>« Retour</b></a>
+  {% endif %}
+{% endfor %}
+
 <p>Choisir une autre lettre:</p>
 
 <table>
   <tbody>
     <tr style="color:black;">
-{% if page.url contains 'src/@/' %} <td><b>@</b></td> {% else %} <td><a href="https://cryptolexique.me/src/@/" class="url">@</a></td> {% endif %}
+{% if page.url contains 'src/@/' %} <td><b>#</b></td> {% else %} <td><a href="https://cryptolexique.me/src/@/" class="url">#</a></td> {% endif %}
 {% if page.url contains 'src/A/' %} <td><b>A</b></td> {% else %} <td><a href="https://cryptolexique.me/src/A/" class="url">A</a></td> {% endif %}
 {% if page.url contains 'src/B' %} <td><b>B</b></td> {% else %} <td><a href="https://cryptolexique.me/src/B/" class="url">B</a></td> {% endif %}
 {% if page.url contains 'src/C' %} <td><b>C</b></td> {% else %} <td><a href="https://cryptolexique.me/src/C/" class="url">C</a></td> {% endif %}
@@ -150,16 +157,12 @@
     <script>
       const mois = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
       const date = new Date();
-      
       const moisEnFrancais = mois[date.getMonth()].charAt(0).toUpperCase() + mois[date.getMonth()].slice(1);
       const annee = date.getFullYear();
-      
       const dateDuJour = `${moisEnFrancais} ${annee}`;
-      
       document.getElementById("dateDuJour").textContent = dateDuJour;
 
       var currentUrl = window.location.href;
-
       var urlsAlphabet = [];
       for (var i = 65; i <= 90; i++) {
         var letter = String.fromCharCode(i);
@@ -172,7 +175,7 @@
         var linkreturn = '<a class="return float-right" href="./" role="button"><b>« Retour</b></a>';
       }
 
-      document.getElementById("linkreturn").innerHTML = linkreturn;
+      //document.getElementById("linkreturn").innerHTML = linkreturn;
       </script>
     </sript>
     <svg class="wavebg"
