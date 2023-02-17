@@ -133,7 +133,7 @@
       
       {{ content }}
 
-<span id="imgauth text-right rounded mt-5"></span>
+<span id="imgauth" class="mt-5 text-right rounded-circle"></span>
 <span id="author"></span>
       
     </div>
@@ -176,7 +176,7 @@ if (path.match(/^\/src\/[^\/]+\/[^\/]+\.html$/)) {
       var lastCommit = data[data.length - 1];
       var authorLogin = lastCommit.author.login;
     var authorImage = lastCommit.author.avatar_url;
-    $("#author").html("<br>Merci a <b>"+ authorLogin +"</b> d'avoir contribué à cet ajout !");
+    $("#author").html("<br>Contributeur : <b>"+ authorLogin);
     $("#imgauth").html("<img src='"+ authorImage +"' id='authorimg' height='80' style='border-radius:5px;'/>");
     },
     error: function(error) {
