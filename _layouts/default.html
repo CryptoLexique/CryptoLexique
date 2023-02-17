@@ -154,7 +154,7 @@
         url: apiUrl,
         method: "GET"
       }).done(function(data) {
-        const lastUpdate = new Date(data.updated_at);
+        const lastUpdate = new Date(data.pushed_at);
         $('#lastupdate').text(`${lastUpdate.toLocaleString()}`);
       }).fail(function() {
         console.error("Erreur lors de la récupération de la date de dernière mise à jour du dépôt.");
