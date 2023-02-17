@@ -161,11 +161,13 @@
       });
       
       const regex = /^\/src\/[^\/]+\/[^\/]+\/.+\.html$/;
-console.log(window.location.href);
+var currentUrl = window.location.href;
+console.log("https://api.github.com/repos/CryptoLexique/CryptoLexique/commits?path="+ window.location.pathname);
 
-if (regex.test(window.location.href)) {
+if (regex.test(currentUrl)) {
   $.ajax({
-    url: "https://api.github.com/repos/CryptoLexique/CryptoLexique/commits?path=",
+
+    url: "https://api.github.com/repos/CryptoLexique/CryptoLexique/commits?path="+ window.location.pathname,
     method: "GET",
     success: function(data) {
       var lastCommit = data[data.length - 1];
