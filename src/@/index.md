@@ -1,10 +1,8 @@
-{% assign alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
-{% assign sorted_pages = (site.pages | sort: 'title') %}
-
-{% for letter in alphabet %}
-{% for page in sorted_pages %}
-{% if page.path contains 'src/{{ letter }}/' and page.path != 'src/{{ letter }}/index.md' %}
-### [{{ page.title | remove: '.md' }}]({{ page.url | relative_url }})
-{% endif %}
-{% endfor %}
+{% assign folders = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" | split: "" %}
+{% for folder in folders %}
+    {% for file in site.static_files %}
+      {% if file.path contains '/src/' and file.path contains '/'+folder+'/' and file.extname == '.md' and file.name != 'index.md' %}
+### {{ file.name | remove: '.md' }}
+      {% endif %}
+    {% endfor %}
 {% endfor %}
