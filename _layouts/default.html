@@ -148,17 +148,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-    <script>
-      const apiUrl = 'https://api.github.com/repos/CryptoLexique/CryptoLexique';
-      $.ajax({
-        url: apiUrl,
-        method: "GET"
-      }).done(function(data) {
-        const lastUpdate = new Date(data.pushed_at);
-        $('#lastupdate').text(`${lastUpdate.toLocaleString()}`);
-      }).fail(function() {
-        console.error("Erreur lors de la récupération de la date de dernière mise à jour du dépôt.");
-      });
+    <script>      
+      const regex = /^\/src\/[^\/]+\/[^\/]+\/.+\.md$/;
+
+if (regex.test(currentUrl)) {
+  const apiUrl = 'https://api.github.com/repos/CryptoLexique/CryptoLexique';
+  $.ajax({
+    url: apiUrl,
+    method: "GET"
+  }).done(function(data) {
+    const lastUpdate = new Date(data.pushed_at);
+    $('#lastupdate').text(`${lastUpdate.toLocaleString()}`);
+  }).fail(function() {
+    console.error("Erreur lors de la récupération de la date de dernière mise à jour du dépôt.");
+  });
+}
 
       var urlsAlphabet = [];
       urlsAlphabet.push("https://cryptolexique.me/src/@/");
