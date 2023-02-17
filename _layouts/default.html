@@ -91,9 +91,6 @@
     <div class="container-lg px-3 my-5 markdown-body" style="background-color:#373737;border-radius:10px;padding:10px 10px 15px 10px;">
 {% if page.url != "/" %}
 
-
-
-
 <span id="linkreturn"></span>
 
 <p>Choisir une autre lettre:</p>
@@ -175,6 +172,8 @@
       } else {
         var linkreturn = '<a class="return float-right" href="../" role="button"><b>« Retour</b></a>';
       }
+
+      document.getElementById("linkreturn").innerHTML = linkreturn;
       </script>
     </sript>
     <svg class="wavebg"
