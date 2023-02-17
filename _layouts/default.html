@@ -92,8 +92,7 @@
     <div class="container-lg px-3 my-5 markdown-body" style="background-color:#373737;border-radius:10px;padding:10px 10px 15px 10px;max-width:1035px;width:1035px;">
 {% if page.url != "/" %}
 
-
-    <a class="return float-right" href="./" role="button"><b>« Retour</b></a>
+<span id="linkreturn"></span>
 
 <p>Choisir une autre lettre:</p>
 
@@ -139,7 +138,7 @@
 
     <div class="container-lg px-3 my-5 markdown-body"
       style="background-color:#373737;border-radius:10px;padding:10px 10px 15px 10px;text-align:center;max-width:1035px;width:1035px;"">
-      Mis à jour : <span id="lastupdate"></span> <br />
+      Mis à jour : <span id="dateDuJour"></span> <br />
       <a href="https://github.com/Mattis44" style="color:white;text-decoration:underline;">Mattis44</a> - <a
           href="https://github.com/xMazaki" style="color:white;text-decoration:underline;">Mazaki</a> - <a
           href="https://github.com/CryptoLexique/CryptoLexique" style="color:white;text-decoration:underline;">CryptoLexique
@@ -154,24 +153,27 @@
       const moisEnFrancais = mois[date.getMonth()].charAt(0).toUpperCase() + mois[date.getMonth()].slice(1);
       const annee = date.getFullYear();
       const dateDuJour = `${moisEnFrancais} ${annee}`;
+      
+      document.getElementById("dateDuJour").textContent = dateDuJour;
 
-      const owner = "CryptoLexique";
-      const repo = "CryptoLexique";
-      const apiUrl = `https://api.github.com/repos/${owner}/${repo}`;
-      
-      $.ajax({
-        url: apiUrl,
-        method: "GET"
-      }).done(function(data) {
-        const lastUpdate = new Date(data.updated_at);
-        $('#lastupdate').text(`${lastUpdate.toLocaleString()}`);
-      }).fail(function() {
-        console.error("Erreur lors de la récupération de la date de dernière mise à jour du dépôt.");
-      });
-      
+      var currentUrl = window.location.href;
+
+      var urlsAlphabet = [];
+      urlsAlphabet.push("https://cryptolexique.me/src/@/");
+      for (var i = 65; i <= 90; i++) {
+        var letter = String.fromCharCode(i);
+        urlsAlphabet.push("https://cryptolexique.me/src/" + letter + "/");
+      }
+
+      if (urlsAlphabet.includes(currentUrl)) {
+        var linkreturn = '<a class="return float-right" href="https://cryptolexique.me/" role="button"><b>« Retour</b></a>';
+      } else {
+        var linkreturn = '<a class="return float-right" href="./" role="button"><b>« Retour</b></a>';
+      }
+
+      document.getElementById("linkreturn").innerHTML = linkreturn;
       </script>
     </sript>
-    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <svg class="wavebg"
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
