@@ -1,16 +1,8 @@
-{% assign alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
+{% assign sorted_pages = site.pages | sort: 'title' %}
 
-{% for letter in alphabet %}
-  {% assign folder = '/src/' | append: letter | append: '/' %}
-  {% assign pages = site.pages | where: "path", folder %}
-  {% assign markdown_pages = pages | where: "extname", ".md" %}
-  {% assign sorted_pages = markdown_pages | sort: "name" %}
-  
-  {% if sorted_pages.size > 1 %}
-      {% for page in sorted_pages %}
-        {% if page.name != 'index.md' %}
-### [{{ page.title | remove: '.md' }}]({{ page.url | relative_url }})
-        {% endif %}
-      {% endfor %}
-  {% endif %}
-{% endfor %}
+
+  {% for page in sorted_pages %}
+    {% if page.path contains '/src/' and page.path != '/src/index.md' and page.path contains '.md' and page.path != '/src/all/index.md' %}
+### [{{ page.title }}]({{ page.url }})
+    {% endif %}
+  {% endfor %}
