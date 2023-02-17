@@ -163,9 +163,9 @@
       const regex = /^\/src\/[^\/]+\/[^\/]+\/.+\.html$/;
 var currentUrl = window.location.href;
 const path = window.location.pathname;
-const pathmd = path.replace(/\.html$/, '.md');
 
-if (regex.test(currentUrl)) {
+if (path.match(/^\/src\/[^\/]+\/[^\/]+\.html$/)) {
+  const pathmd = path.replace(/\.html$/, '.md');
   console.log("https://api.github.com/repos/CryptoLexique/CryptoLexique/commits?path="+ pathmd);
   $.ajax({
     url: "https://api.github.com/repos/CryptoLexique/CryptoLexique/commits?path="+ pathmd,
