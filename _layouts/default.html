@@ -92,18 +92,16 @@
 {% if page.url != "/" %}
 
 
-{% if page.url == "src/A/" or page.url == "src/B/" or page.url == "src/C/" or page.url == "src/D/" or page.url ==
-"src/E/" or page.url == "src/F/" or page.url == "src/G/" or page.url == "src/H/" or page.url == "src/I/" or page.url ==
-"src/J/" or page.url == "src/K/" or page.url == "src/L/" or page.url == "src/M/" or page.url == "src/N/" or page.url ==
-"src/O/" or page.url == "src/P/" or page.url == "src/Q/" or page.url == "src/R/" or page.url == "src/S/" or page.url ==
-"src/T/" or page.url == "src/U/" or page.url == "src/V/" or page.url == "src/W/" or page.url == "src/X/" or page.url ==
-"src/Y/" or page.url == "src/Z/" %}
-{% assign returnbtn = "https://cryptolexique.me/" %}
-{% else %}
-{% assign returnbtn = "../" %}
-{% endif %}
 
-<a class="return float-right" href="{{ returnbtn }}" role="button"><b>« Retour</b></a>
+
+<a class="return float-right" href="{% assign alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" | split: "" %}
+{% for letter in alphabet %}
+    {% if page.url == "/src/{{ letter }}/" %}
+    https://cryptolexique.me/
+    {% else %}
+    ../
+    {% endif %}
+{% endfor %}" role="button"><b>« Retour</b></a>
 
 <p>Choisir une autre lettre:</p>
 
