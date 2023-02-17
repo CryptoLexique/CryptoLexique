@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "fr-FR" }}">
-  <head>
-    <!-- HTML Meta Tags -->
+<head>
+  <!-- HTML Meta Tags -->
   <title>CryptoLexique</title>
   <meta name="description" content="Un lexique communautaire sur la base de contribution de tout ce qui est présent sur la blockchain !">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
   <meta property="og:title" content="CryptoLexique">
   <meta property="og:description" content="CryptoLexique est un lexique de termes et d'expressions utilisés dans le monde de la cryptomonnaie.">
   <meta property="og:image" content="https://cryptolexique.me/assets/og-image.png">
-
+  
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="cryptolexique.me">
@@ -24,188 +24,198 @@
   <meta name="twitter:image" content="https://cryptolexique.me/assets/og-image.png">
   <meta name="theme-color" content="#501ccc">
   <meta name="twitter:card" content="summary_large_image">
-
+  
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-
-{% seo %}
-    <link rel="stylesheet" href="{{ "./assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <style>
-      body {
-    	color: white;
-        background-color: black;
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        
-      }
-      .parallax > use{
-        animation:move-forever 12s linear infinite;
-        &:nth-child(1){animation-delay:-2s;}
-        &:nth-child(2){animation-delay:-2s; animation-duration:5s}
-        &:nth-child(3){animation-delay:-4s; animation-duration:3s}
-      }
-
-      @keyframes move-forever{
-        0%{transform: translate(-90px , 0%)}
-        100%{transform: translate(85px , 0%)} 
-      }
-
-      .wavebg {
-        display: block;
-        width: 100%;
-        height: 20em;
-        max-height: 100vh;
-        margin: 0;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-      }
-      p {
-        color: #999999;
-      }
-      {% if page.url != "/" %}
-      a {
-        color: white;
-      }
-      {% endif %}
-      {% if page.url == "/" %}
-      a {
-        color: black;
-        text-decoration: underline;
-      }
-      {% endif %}
-      .url {
-        color: black;
-      }
-      .return {
-        color: white;
-        text-decoration: underline;
-      }
-      .strong {
-       font-weight: bold; 
-      }
-    </style>
-    {% include head-custom.html %}
-  </head>
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body" style="background-color:#373737;border-radius:10px;padding:10px 10px 15px 10px;max-width:1035px;width:1035px;">
-{% if page.url != "/" %}
-
-<span id="linkreturn"></span>
-
-<p>Choisir une autre lettre:</p>
-
-<table>
-  <tbody>
-    <tr style="color:black;">
-{% if page.url contains 'src/@/' %} <td><b>#</b></td> {% else %} <td><a href="https://cryptolexique.me/src/@/" class="url">#</a></td> {% endif %}
-{% if page.url contains 'src/A/' %} <td><b>A</b></td> {% else %} <td><a href="https://cryptolexique.me/src/A/" class="url">A</a></td> {% endif %}
-{% if page.url contains 'src/B' %} <td><b>B</b></td> {% else %} <td><a href="https://cryptolexique.me/src/B/" class="url">B</a></td> {% endif %}
-{% if page.url contains 'src/C' %} <td><b>C</b></td> {% else %} <td><a href="https://cryptolexique.me/src/C/" class="url">C</a></td> {% endif %}
-{% if page.url contains 'src/D' %} <td><b>D</b></td> {% else %} <td><a href="https://cryptolexique.me/src/D/" class="url">D</a></td> {% endif %}
-{% if page.url contains 'src/E' %} <td><b>E</b></td> {% else %} <td><a href="https://cryptolexique.me/src/E/" class="url">E</a></td> {% endif %}
-{% if page.url contains 'src/F' %} <td><b>F</b></td> {% else %} <td><a href="https://cryptolexique.me/src/F/" class="url">F</a></td> {% endif %}
-{% if page.url contains 'src/G' %} <td><b>G</b></td> {% else %} <td><a href="https://cryptolexique.me/src/G/" class="url">G</a></td> {% endif %}
-{% if page.url contains 'src/H' %} <td><b>H</b></td> {% else %} <td><a href="https://cryptolexique.me/src/H/" class="url">H</a></td> {% endif %}
-{% if page.url contains 'src/I' %} <td><b>I</b></td> {% else %} <td><a href="https://cryptolexique.me/src/I/" class="url">I</a></td> {% endif %}
-{% if page.url contains 'src/J' %} <td><b>J</b></td> {% else %} <td><a href="https://cryptolexique.me/src/J/" class="url">J</a></td> {% endif %}
-{% if page.url contains 'src/K' %} <td><b>K</b></td> {% else %} <td><a href="https://cryptolexique.me/src/K/" class="url">K</a></td> {% endif %}
-{% if page.url contains 'src/L' %} <td><b>L</b></td> {% else %} <td><a href="https://cryptolexique.me/src/L/" class="url">L</a></td> {% endif %}
-{% if page.url contains 'src/M' %} <td><b>M</b></td> {% else %} <td><a href="https://cryptolexique.me/src/M/" class="url">M</a></td> {% endif %}
-{% if page.url contains 'src/N' %} <td><b>N</b></td> {% else %} <td><a href="https://cryptolexique.me/src/N/" class="url">N</a></td> {% endif %}
-{% if page.url contains 'src/O' %} <td><b>O</b></td> {% else %} <td><a href="https://cryptolexique.me/src/O/" class="url">O</a></td> {% endif %}
-{% if page.url contains 'src/P' %} <td><b>P</b></td> {% else %} <td><a href="https://cryptolexique.me/src/P/" class="url">P</a></td> {% endif %}
-{% if page.url contains 'src/Q' %} <td><b>Q</b></td> {% else %} <td><a href="https://cryptolexique.me/src/Q/" class="url">Q</a></td> {% endif %}
-{% if page.url contains 'src/R' %} <td><b>R</b></td> {% else %} <td><a href="https://cryptolexique.me/src/R/" class="url">R</a></td> {% endif %}
-{% if page.url contains 'src/S' %} <td><b>S</b></td> {% else %} <td><a href="https://cryptolexique.me/src/S/" class="url">S</a></td> {% endif %}
-{% if page.url contains 'src/T' %} <td><b>T</b></td> {% else %} <td><a href="https://cryptolexique.me/src/T/" class="url">T</a></td> {% endif %}
-{% if page.url contains 'src/U' %} <td><b>U</b></td> {% else %} <td><a href="https://cryptolexique.me/src/U/" class="url">U</a></td> {% endif %}
-{% if page.url contains 'src/V' %} <td><b>V</b></td> {% else %} <td><a href="https://cryptolexique.me/src/V/" class="url">V</a></td> {% endif %}
-{% if page.url contains 'src/W' %} <td><b>W</b></td> {% else %} <td><a href="https://cryptolexique.me/src/W/" class="url">W</a></td> {% endif %}
-{% if page.url contains 'src/X' %} <td><b>X</b></td> {% else %} <td><a href="https://cryptolexique.me/src/X/" class="url">X</a></td> {% endif %}
-{% if page.url contains 'src/Y' %} <td><b>Y</b></td> {% else %} <td><a href="https://cryptolexique.me/src/Y/" class="url">Y</a></td> {% endif %}
-{% if page.url contains 'src/Z' %} <td><b>Z</b></td> {% else %} <td><a href="https://cryptolexique.me/src/Z/" class="url">Z</a></td> {% endif %}
-</tr>
-  </tbody>
-</table><br>
-{% endif %}
+  
+  {% seo %}
+  <link rel="stylesheet" href="{{ "./assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  <style>
+    body {
+      color: white;
+      background-color: black;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       
-      {{ content }}
-
-<span id="imgauth"></span>
-<span id="author"></span>
-      
-    </div>
-
-    <div class="container-lg px-3 my-5 markdown-body"
-      style="background-color:#373737;border-radius:10px;padding:10px 10px 15px 10px;text-align:center;max-width:1035px;width:1035px;"">
-      Mis à jour : <span id="lastupdate"></span> <br />
-      <a href="https://github.com/Mattis44" style="color:white;text-decoration:underline;">Mattis44</a> - <a
-          href="https://github.com/xMazaki" style="color:white;text-decoration:underline;">Mazaki</a> - <a
-          href="https://github.com/CryptoLexique/CryptoLexique" style="color:white;text-decoration:underline;">CryptoLexique
-          Repository</a>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-    <script>
-      const apiUrl = 'https://api.github.com/repos/CryptoLexique/CryptoLexique';
-      $.ajax({
-        url: apiUrl,
-        method: "GET"
-      }).done(function(data) {
-        const lastUpdate = new Date(data.pushed_at);
-        $('#lastupdate').text(`${lastUpdate.toLocaleString()}`);
-      }).fail(function() {
-        console.error("Erreur lors de la récupération de la date de dernière mise à jour du dépôt.");
-      });
-      
-      const regex = /^\/src\/[^\/]+\/[^\/]+\/.+\.html$/;
-var currentUrl = window.location.href;
-const path = window.location.pathname;
-
-if (path.match(/^\/src\/[^\/]+\/[^\/]+\.html$/)) {
-  const pathmd = path.replace(/\.html$/, '.md');
-  console.log("https://api.github.com/repos/CryptoLexique/CryptoLexique/commits?path="+ pathmd);
-  $.ajax({
-    url: "https://api.github.com/repos/CryptoLexique/CryptoLexique/commits?path="+ pathmd,
-    method: "GET",
-    success: function(data) {
-      var lastCommit = data[data.length - 1];
-      var authorLogin = lastCommit.author.login;
-    var authorImage = lastCommit.author.avatar_url;
-    $("#author").html("<br>Contributeur : <b>"+ authorLogin);
-    $("#imgauth").html("<img src='"+ authorImage +"' id='authorimg' height='50' class='mt-5 text-right rounded-circle'/>");
-    },
-    error: function(error) {
-      console.log(error);
     }
-  });
-}
+    .parallax > use{
+      animation:move-forever 12s linear infinite;
+      &:nth-child(1){animation-delay:-2s;}
+      &:nth-child(2){animation-delay:-2s; animation-duration:5s}
+      &:nth-child(3){animation-delay:-4s; animation-duration:3s}
+    }
+    
+    @keyframes move-forever{
+      0%{transform: translate(-90px , 0%)}
+      100%{transform: translate(85px , 0%)} 
+    }
+    
+    .wavebg {
+      display: block;
+      width: 100%;
+      height: 20em;
+      max-height: 100vh;
+      margin: 0;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+    p {
+      color: #999999;
+    }
+    {% if page.url != "/" %}
+    a {
+      color: white;
+    }
+    {% endif %}
+    {% if page.url == "/" %}
+    a {
+      color: black;
+      text-decoration: underline;
+    }
+    {% endif %}
+    .url {
+      color: black;
+    }
+    .return {
+      color: white;
+      text-decoration: underline;
+    }
+    .strong {
+      font-weight: bold; 
+    }
+    
+    .contrib-info {
+      text-align: right;
+    }
+    
+    .rounded-circle {
+      border-radius: 50%;
+    }
+  </style>
+  {% include head-custom.html %}
+</head>
+<body>
+  <div class="container-lg px-3 my-5 markdown-body" style="background-color:#373737;border-radius:10px;padding:10px 10px 15px 10px;max-width:1035px;width:1035px;">
+    {% if page.url != "/" %}
+    
+    <span id="linkreturn"></span>
+    
+    <p>Choisir une autre lettre:</p>
+    
+    <table>
+      <tbody>
+        <tr style="color:black;">
+          {% if page.url contains 'src/@/' %} <td><b>#</b></td> {% else %} <td><a href="https://cryptolexique.me/src/@/" class="url">#</a></td> {% endif %}
+          {% if page.url contains 'src/A/' %} <td><b>A</b></td> {% else %} <td><a href="https://cryptolexique.me/src/A/" class="url">A</a></td> {% endif %}
+          {% if page.url contains 'src/B' %} <td><b>B</b></td> {% else %} <td><a href="https://cryptolexique.me/src/B/" class="url">B</a></td> {% endif %}
+          {% if page.url contains 'src/C' %} <td><b>C</b></td> {% else %} <td><a href="https://cryptolexique.me/src/C/" class="url">C</a></td> {% endif %}
+          {% if page.url contains 'src/D' %} <td><b>D</b></td> {% else %} <td><a href="https://cryptolexique.me/src/D/" class="url">D</a></td> {% endif %}
+          {% if page.url contains 'src/E' %} <td><b>E</b></td> {% else %} <td><a href="https://cryptolexique.me/src/E/" class="url">E</a></td> {% endif %}
+          {% if page.url contains 'src/F' %} <td><b>F</b></td> {% else %} <td><a href="https://cryptolexique.me/src/F/" class="url">F</a></td> {% endif %}
+          {% if page.url contains 'src/G' %} <td><b>G</b></td> {% else %} <td><a href="https://cryptolexique.me/src/G/" class="url">G</a></td> {% endif %}
+          {% if page.url contains 'src/H' %} <td><b>H</b></td> {% else %} <td><a href="https://cryptolexique.me/src/H/" class="url">H</a></td> {% endif %}
+          {% if page.url contains 'src/I' %} <td><b>I</b></td> {% else %} <td><a href="https://cryptolexique.me/src/I/" class="url">I</a></td> {% endif %}
+          {% if page.url contains 'src/J' %} <td><b>J</b></td> {% else %} <td><a href="https://cryptolexique.me/src/J/" class="url">J</a></td> {% endif %}
+          {% if page.url contains 'src/K' %} <td><b>K</b></td> {% else %} <td><a href="https://cryptolexique.me/src/K/" class="url">K</a></td> {% endif %}
+          {% if page.url contains 'src/L' %} <td><b>L</b></td> {% else %} <td><a href="https://cryptolexique.me/src/L/" class="url">L</a></td> {% endif %}
+          {% if page.url contains 'src/M' %} <td><b>M</b></td> {% else %} <td><a href="https://cryptolexique.me/src/M/" class="url">M</a></td> {% endif %}
+          {% if page.url contains 'src/N' %} <td><b>N</b></td> {% else %} <td><a href="https://cryptolexique.me/src/N/" class="url">N</a></td> {% endif %}
+          {% if page.url contains 'src/O' %} <td><b>O</b></td> {% else %} <td><a href="https://cryptolexique.me/src/O/" class="url">O</a></td> {% endif %}
+          {% if page.url contains 'src/P' %} <td><b>P</b></td> {% else %} <td><a href="https://cryptolexique.me/src/P/" class="url">P</a></td> {% endif %}
+          {% if page.url contains 'src/Q' %} <td><b>Q</b></td> {% else %} <td><a href="https://cryptolexique.me/src/Q/" class="url">Q</a></td> {% endif %}
+          {% if page.url contains 'src/R' %} <td><b>R</b></td> {% else %} <td><a href="https://cryptolexique.me/src/R/" class="url">R</a></td> {% endif %}
+          {% if page.url contains 'src/S' %} <td><b>S</b></td> {% else %} <td><a href="https://cryptolexique.me/src/S/" class="url">S</a></td> {% endif %}
+          {% if page.url contains 'src/T' %} <td><b>T</b></td> {% else %} <td><a href="https://cryptolexique.me/src/T/" class="url">T</a></td> {% endif %}
+          {% if page.url contains 'src/U' %} <td><b>U</b></td> {% else %} <td><a href="https://cryptolexique.me/src/U/" class="url">U</a></td> {% endif %}
+          {% if page.url contains 'src/V' %} <td><b>V</b></td> {% else %} <td><a href="https://cryptolexique.me/src/V/" class="url">V</a></td> {% endif %}
+          {% if page.url contains 'src/W' %} <td><b>W</b></td> {% else %} <td><a href="https://cryptolexique.me/src/W/" class="url">W</a></td> {% endif %}
+          {% if page.url contains 'src/X' %} <td><b>X</b></td> {% else %} <td><a href="https://cryptolexique.me/src/X/" class="url">X</a></td> {% endif %}
+          {% if page.url contains 'src/Y' %} <td><b>Y</b></td> {% else %} <td><a href="https://cryptolexique.me/src/Y/" class="url">Y</a></td> {% endif %}
+          {% if page.url contains 'src/Z' %} <td><b>Z</b></td> {% else %} <td><a href="https://cryptolexique.me/src/Z/" class="url">Z</a></td> {% endif %}
+        </tr>
+      </tbody>
+    </table><br>
+    {% endif %}
+    
+    {{ content }}
+    <div class="contrib-info mt-5">
+      <span id="imgauth"></span>
+      <span id="author"></span>
+    </div>
+    
+    
+  </div>
+  
+  <div class="container-lg px-3 my-5 markdown-body"
+  style="background-color:#373737;border-radius:10px;padding:10px 10px 15px 10px;text-align:center;max-width:1035px;width:1035px;"">
+  Mis à jour : <span id="lastupdate"></span> <br />
+  <a href="https://github.com/Mattis44" style="color:white;text-decoration:underline;">Mattis44</a> - <a
+  href="https://github.com/xMazaki" style="color:white;text-decoration:underline;">Mazaki</a> - <a
+  href="https://github.com/CryptoLexique/CryptoLexique" style="color:white;text-decoration:underline;">CryptoLexique
+  Repository</a>
+</div>
 
-      var urlsAlphabet = [];
-      urlsAlphabet.push("https://cryptolexique.me/src/@/");
-      for (var i = 65; i <= 90; i++) {
-        var letter = String.fromCharCode(i);
-        urlsAlphabet.push("https://cryptolexique.me/src/" + letter + "/");
-      }
-      if (urlsAlphabet.includes(currentUrl)) {
-        var linkreturn = '<a class="return float-right" href="https://cryptolexique.me/" role="button"><b>« Retour</b></a>';
-      } else {
-        var linkreturn = '<a class="return float-right" href="./" role="button"><b>« Retour</b></a>';
-      }
-      document.getElementById("linkreturn").innerHTML = linkreturn;
-      </script>
-    <svg class="wavebg"
-     xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     viewBox="0 24 150 28"
-     preserveAspectRatio="none">
- <defs>
- <path id="gentle-wave"
- d="M-160 44c30 0 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+<script>anchors.add();</script>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script>
+  const apiUrl = 'https://api.github.com/repos/CryptoLexique/CryptoLexique';
+  $.ajax({
+    url: apiUrl,
+    method: "GET"
+  }).done(function(data) {
+    const lastUpdate = new Date(data.pushed_at);
+    $('#lastupdate').text(`${lastUpdate.toLocaleString()}`);
+  }).fail(function() {
+    console.error("Erreur lors de la récupération de la date de dernière mise à jour du dépôt.");
+  });
+  
+  const regex = /^\/src\/[^\/]+\/[^\/]+\/.+\.html$/;
+  var currentUrl = window.location.href;
+  const path = window.location.pathname;
+  
+  if (path.match(/^\/src\/[^\/]+\/[^\/]+\.html$/)) {
+    const pathmd = path.replace(/\.html$/, '.md');
+    console.log("https://api.github.com/repos/CryptoLexique/CryptoLexique/commits?path="+ pathmd);
+    $.ajax({
+      url: "https://api.github.com/repos/CryptoLexique/CryptoLexique/commits?path="+ pathmd,
+      method: "GET",
+      success: function(data) {
+        var lastCommit = data[data.length - 1];
+        var authorLogin = lastCommit.author.login;
+        var authorImage = lastCommit.author.avatar_url;
+        $("#author").html("<br>Contributeur : <b>"+ authorLogin);
+          $("#imgauth").html("<img src='"+ authorImage +"' id='authorimg' height='50' class='rounded-circle'/>");
+        },
+        error: function(error) {
+          console.log(error);
+        }
+      });
+    }
+    
+    var urlsAlphabet = [];
+    urlsAlphabet.push("https://cryptolexique.me/src/@/");
+    for (var i = 65; i <= 90; i++) {
+      var letter = String.fromCharCode(i);
+      urlsAlphabet.push("https://cryptolexique.me/src/" + letter + "/");
+    }
+    if (urlsAlphabet.includes(currentUrl)) {
+      var linkreturn = '<a class="return float-right" href="https://cryptolexique.me/" role="button"><b>« Retour</b></a>';
+    } else {
+      var linkreturn = '<a class="return float-right" href="./" role="button"><b>« Retour</b></a>';
+    }
+    document.getElementById("linkreturn").innerHTML = linkreturn;
+  </script>
+  <svg class="wavebg"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 24 150 28"
+  preserveAspectRatio="none">
+  <defs>
+    <path id="gentle-wave"
+    d="M-160 44c30 0 
     58-18 88-18s
     58 18 88 18 
     58-18 88-18 
@@ -213,10 +223,10 @@ if (path.match(/^\/src\/[^\/]+\/[^\/]+\.html$/)) {
     v44h-352z" />
   </defs>
   <g class="parallax">
-   <use xlink:href="#gentle-wave" x="70" y="0" fill="#6726EA"/>
-   <use xlink:href="#gentle-wave" x="70" y="5" fill="#5411D6"/>
-   <use xlink:href="#gentle-wave" x="70" y="6" fill="#5E17EB"/>  
+    <use xlink:href="#gentle-wave" x="70" y="0" fill="#6726EA"/>
+    <use xlink:href="#gentle-wave" x="70" y="5" fill="#5411D6"/>
+    <use xlink:href="#gentle-wave" x="70" y="6" fill="#5E17EB"/>  
   </g>
 </svg>
-  </body>
+</body>
 </html>
