@@ -176,7 +176,7 @@ if (path.match(/^\/src\/[^\/]+\/[^\/]+\.html$/)) {
       var lastCommit = data[data.length - 1];
       var authorLogin = lastCommit.author.login;
     var authorImage = lastCommit.author.avatar_url;
-    $("#author").text("Merci a <b>"+ authorLogin +"</b> d'avoir contribué à cet ajout !");
+    $("#author").html("<br>Merci a <b>"+ authorLogin +"</b> d'avoir contribué à cet ajout !");
     $("#imgauth").html("<img src='"+ authorImage +"' id='authorimg' height='80'/>");
     },
     error: function(error) {
