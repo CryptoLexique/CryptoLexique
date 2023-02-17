@@ -91,12 +91,16 @@
     <div class="container-lg px-3 my-5 markdown-body" style="background-color:#373737;border-radius:10px;padding:10px 10px 15px 10px;">
 {% if page.url != "/" %}
 
-{% assign returnbtn = "../" %}
-{% for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
-  {% if page.url == "/src/{{ letter }}/" %}
-  {% assign returnbtn = "https://cryptolexique.me/" %}
+{% assign alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
+
+{% for letter in alphabet %}
+  {% if page.url contains "/src/{{ letter }}/" %}
+    {% assign returnbtn = "https://cryptolexique.me/" %}
+  {% else %}
+    {% assign returnbtn = "../" %}
   {% endif %}
 {% endfor %}
+
 
 <a class="return float-right" href="{{ returnbtn }}" role="button"><b>« Retour</b></a>
 
@@ -147,7 +151,7 @@
 
     <div class="container-lg px-3 my-5 markdown-body"
       style="background-color:#373737;border-radius:10px;padding:10px 10px 15px 10px;text-align:center;">
-      Mis à jour le: {{ "now" | date: "%B %Y" }} <br />
+      Mis à jour : {{ site.time | date: "%B %Y" | capitalize }} <br />
       <a href="https://github.com/Mattis44" style="color:white;">Mattis44</a> - <a href="https://github.com/xMazaki"
         style="color:white;">Mazaki</a> - <a href="https://github.com/CryptoLexique/CryptoLexique"
         style="color:white;">CryptoLexique Repository</a>
