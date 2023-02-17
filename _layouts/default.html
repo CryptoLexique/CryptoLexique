@@ -92,14 +92,8 @@
     <div class="container-lg px-3 my-5 markdown-body" style="background-color:#373737;border-radius:10px;padding:10px 10px 15px 10px;max-width:1035px;width:1035px;">
 {% if page.url != "/" %}
 
-<span id="linkreturn"></span>
 
-{% for folder in site.static_files %}
-  {% if folder.path contains 'src/' %}
-    {% assign folder_name = folder.path | split: '/' | last %}
-    <a class="return float-right" href="{{ folder_name }}" role="button"><b>« Retour</b></a>
-  {% endif %}
-{% endfor %}
+    <a class="return float-right" href="./" role="button"><b>« Retour</b></a>
 
 <p>Choisir une autre lettre:</p>
 
@@ -170,7 +164,7 @@
         method: "GET"
       }).done(function(data) {
         const lastUpdate = new Date(data.updated_at);
-        $('#lastupdate').text(`La dernière mise à jour de ce dépôt est survenue le ${lastUpdate.toLocaleString()}`);
+        $('#lastupdate').text(`${lastUpdate.toLocaleString()}`);
       }).fail(function() {
         console.error("Erreur lors de la récupération de la date de dernière mise à jour du dépôt.");
       });
