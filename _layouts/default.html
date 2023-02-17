@@ -162,12 +162,13 @@
       
       const regex = /^\/src\/[^\/]+\/[^\/]+\/.+\.html$/;
 var currentUrl = window.location.href;
-console.log("https://api.github.com/repos/CryptoLexique/CryptoLexique/commits?path="+ window.location.pathname);
+const path = window.location.pathname;
+const pathmd = path.replace(/\.html$/, '.md');
 
 if (regex.test(currentUrl)) {
+  console.log("https://api.github.com/repos/CryptoLexique/CryptoLexique/commits?path="+ pathmd);
   $.ajax({
-
-    url: "https://api.github.com/repos/CryptoLexique/CryptoLexique/commits?path="+ window.location.pathname,
+    url: "https://api.github.com/repos/CryptoLexique/CryptoLexique/commits?path="+ pathmd,
     method: "GET",
     success: function(data) {
       var lastCommit = data[data.length - 1];
