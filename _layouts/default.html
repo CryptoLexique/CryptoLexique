@@ -161,8 +161,9 @@
       });
       
       const regex = /^\/src\/[^\/]+\/[^\/]+\/.+\.html$/;
+console.log(window.location.href);
 
-if (regex.test(currentUrl)) {
+if (regex.test(window.location.href)) {
   $.ajax({
     url: "https://api.github.com/repos/CryptoLexique/CryptoLexique/commits?path=",
     method: "GET",
