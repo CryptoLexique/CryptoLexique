@@ -6,6 +6,6 @@
     {% for page in sorted_pages %}
       {% if page.path contains '/src/' and page.path contains '/'+folder+'/' and page.name != 'index.md' %}
         {% assign found = true %}
-        ### [{{ page.title | remove: '.md' }}]({{ page.url | relative_url }})
+        ###[{{ page.title | remove: '.md' }}]({{ page.url | relative_url }})
       {% endif %}
     {% endfor %}
