@@ -219,6 +219,10 @@ searchInput.addEventListener("input", () => {
   showSuggestions(filteredWords);
 });
 
+searchInput.addEventListener("blur", () => {
+  suggestions.style.display = "none";
+});
+
 function showSuggestions(filteredWords) {
   suggestions.innerHTML = "";
 

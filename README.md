@@ -11,8 +11,8 @@ Par quoi commence le mot que vous recherchez ?
 
 <div class="autocomplete" style="width: 99%;">
   <input type="text" id="search" placeholder="Rechercher...">
-  <ul id="suggestions"></ul><br />
-</div>
+  <ul id="suggestions"></ul>
+</div><br />
 
 ou
     
