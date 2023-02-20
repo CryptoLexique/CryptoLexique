@@ -106,9 +106,10 @@
       padding: 0;
       width: 100%;
       background-color: white;
-      border: 1px solid #ccc;
+      border: 1px solid #a0a0a0;
       max-height: 200px;
       overflow-y: auto;
+      color: black;
     }
     
     #suggestions li {
@@ -196,8 +197,7 @@
 <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 <script>
   {% if page.url == "/" %}
-const words = [{% for file in site.static_files %}{% if file.path contains '/src/' and file.extname == '.md' and file.name != 'index.md' %}"{{ file.name | remove: '.md' }}", {% endif %}
-{% endfor %}];
+const words = [{% for file in site.static_files %}{% if file.path contains '/src/' and file.extname == '.md' and file.name != 'index.md' %}"{{ file.name | remove: '.md' }}", {% endif %}{% endfor %}];
 
 const searchInput = document.querySelector("#search");
 const suggestions = document.querySelector("#suggestions");
@@ -219,8 +219,9 @@ function showSuggestions(filteredWords) {
   filteredWords.forEach(word => {
     const li = document.createElement("li");
     li.textContent = word;
+	const firstLetter = word.charAt(0).toUpperCase();
     li.addEventListener("click", () => {
-      window.location.href = 'https://cryptolexique.me/src/'+ word +'.html';
+      window.location.href = 'https://cryptolexique.me/src/' + firstLetter + '/' + word +'.html';
     });
     suggestions.appendChild(li);
   });
