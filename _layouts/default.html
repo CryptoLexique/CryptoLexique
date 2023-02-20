@@ -147,19 +147,17 @@
     
     
   </div>
-  {% assign total_words = 0 %}
-{% for file in site.static_files %}
-    {% if file.path contains '/src/' and file.extname == '.md' and file.name != 'index.md' %}
-        {% assign file_content = file.content %}
-        {% assign word_count = file_content | number_of_words %}
-        {% assign total_words = total_words | plus: word_count %}
-    {% endif %}
-{% endfor %}
+  {% assign count = 0 %}
+  {% for file in site.static_files %}
+      {% if file.path contains '/src/' and file.extname == '.md' and file.name != 'index.md' %}
+          {% assign count = count | plus: 1 %}
+      {% endif %}
+  {% endfor %}
 
   <div class="container-lg px-3 my-5 markdown-body"
   style="background-color:#373737;border-radius:10px;padding:10px 10px 15px 10px;text-align:center;max-width:1035px;width:1035px;"">
   Mis à jour : <span id="lastupdate"></span> <br />
-  Nombre de mots au lexique :  {{ total_words }}<br />
+  Nombre de mots au lexique :  {{ count }}<br />
   <a href="https://github.com/Mattis44" style="color:white;text-decoration:underline;">Mattis44</a> - <a
   href="https://github.com/xMazaki" style="color:white;text-decoration:underline;">Mazaki</a> - <a
   href="https://github.com/PikPakPik" style="color:white;text-decoration:underline;">PikPakPik</a> - <a
