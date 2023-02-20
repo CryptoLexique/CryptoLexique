@@ -196,13 +196,8 @@
 <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 <script>
   {% if page.url == "/" %}
-const words = [
-{% for file in site.static_files %}
-    {% if file.path contains '/src/' and file.extname == '.md' and file.name != 'index.md' %}
-"{{ file.name | remove: '.md' | capitalize }}", 
-    {% endif %}
-{% endfor %}
-];
+const words = [{% for file in site.static_files %}{% if file.path contains '/src/' and file.extname == '.md' and file.name != 'index.md' %}"{{ file.name | remove: '.md' }}", {% endif %}
+{% endfor %}];
 
 const searchInput = document.querySelector("#search");
 const suggestions = document.querySelector("#suggestions");
