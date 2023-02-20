@@ -93,6 +93,32 @@
     .rounded-circle {
       border-radius: 50%;
     }
+    .autocomplete {
+      position: relative;
+      display: inline-block;
+    }
+    
+    #suggestions {
+      position: absolute;
+      z-index: 1;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      background-color: white;
+      border: 1px solid #ccc;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    
+    #suggestions li {
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    
+    #suggestions li:hover {
+      background-color: #f2f2f2;
+    }
   </style>
   {% include head-custom.html %}
 </head>
@@ -169,6 +195,45 @@
 <script>anchors.add();</script>
 <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 <script>
+  {% if page.url == "/" %}
+const words = [
+{% for file in site.static_files %}
+    {% if file.path contains '/src/' and file.extname == '.md' and file.name != 'index.md' %}
+"{{ file.name | remove: '.md' | capitalize }}", 
+    {% endif %}
+{% endfor %}
+];
+
+const searchInput = document.querySelector("#search");
+const suggestions = document.querySelector("#suggestions");
+
+searchInput.addEventListener("input", () => {
+  const inputText = searchInput.value.trim().toLowerCase();
+  const filteredWords = words.filter(word => word.startsWith(inputText));
+  showSuggestions(filteredWords);
+});
+
+function showSuggestions(filteredWords) {
+  suggestions.innerHTML = "";
+
+  if (filteredWords.length === 0) {
+    suggestions.style.display = "none";
+    return;
+  }
+
+  filteredWords.forEach(word => {
+    const li = document.createElement("li");
+    li.textContent = word;
+    li.addEventListener("click", () => {
+      window.location.href = 'https://cryptolexique.me/src/'+ word +'.html';
+    });
+    suggestions.appendChild(li);
+  });
+
+  suggestions.style.display = "block";
+}
+{% endif %}
+  
   const apiUrl = 'https://api.github.com/repos/CryptoLexique/CryptoLexique';
   $.ajax({
     url: apiUrl,
