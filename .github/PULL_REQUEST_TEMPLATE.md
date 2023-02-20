@@ -2,6 +2,7 @@
 <!-- Une description de ce que vous avez ajouté -->
 
 ## Pseudo Discord avec # (optionnel)
+<!-- Pour vous donner le rôle Contributor sur le serveur CryptoFR -->
 
 ## Certifications
 - [ ] Vous avez bien lu les normes de [Contribution](./CONTRIBUTING.md)
