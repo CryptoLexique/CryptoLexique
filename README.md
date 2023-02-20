@@ -9,7 +9,7 @@ Un lexique de tout ce qui est présent sur la blockchain !
 ## Recherche
 Par quoi commence le mot que vous recherchez ?
 
-<div class="autocomplete">
+<div class="autocomplete" style="width: 99%;">
   <input type="text" id="search" placeholder="Rechercher...">
   <ul id="suggestions"></ul>
 </div><br />

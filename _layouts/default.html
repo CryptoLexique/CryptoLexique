@@ -93,33 +93,45 @@
     .rounded-circle {
       border-radius: 50%;
     }
-    .autocomplete {
-      position: relative;
-      display: inline-block;
-    }
-    
-    #suggestions {
-      position: absolute;
-      z-index: 1;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      background-color: white;
-      border: 1px solid #a0a0a0;
-      max-height: 200px;
-      overflow-y: auto;
-      color: black;
-    }
-    
-    #suggestions li {
-      padding: 8px 12px;
-      cursor: pointer;
-    }
-    
-    #suggestions li:hover {
-      background-color: #f2f2f2;
-    }
+      .autocomplete {
+        position: relative;
+        display: inline-block;
+      }
+      
+      #search {
+        width: 100%;
+        height: 50px;
+        font-size: 24px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      
+      #suggestions {
+        text-align:center;
+        position: absolute;
+        z-index: 1;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-top: none;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+      
+      #suggestions li {
+        padding: 10px;
+        font-size: 19px;
+        cursor: pointer;
+      }
+      
+      #suggestions li:hover {
+        background-color: #f2f2f2;
+      }
   </style>
   {% include head-custom.html %}
 </head>
