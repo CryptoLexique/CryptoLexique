@@ -1,7 +1,7 @@
 ## Description 
 <!-- Une description de ce que vous avez ajouté -->
 
-## Pseudo Discord (avec #)
+## Pseudo Discord avec # (optionnel)
 
 ## Certifications
 - [ ] Vous avez bien lu les normes de [Contribution](./CONTRIBUTING.md)
