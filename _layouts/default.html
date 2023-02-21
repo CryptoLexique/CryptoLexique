@@ -219,10 +219,6 @@ searchInput.addEventListener("input", () => {
   showSuggestions(filteredWords);
 });
 
-//searchInput.addEventListener("blur", () => {
-//  suggestions.style.display = "none";
-//});
-
 function showSuggestions(filteredWords) {
   suggestions.innerHTML = "";
 
@@ -243,6 +239,15 @@ function showSuggestions(filteredWords) {
 
   suggestions.style.display = "block";
 }
+
+document.addEventListener("mouseup", function(event) {
+  var obj = document.getElementById("suggestions");
+var objs = document.getElementById("search");
+  if (!obj.contains(event.target) && !objs.contains(event.target)) {
+  suggestions.style.display = "none";
+  return;
+  }
+});
 {% endif %}
   
   const apiUrl = 'https://api.github.com/repos/CryptoLexique/CryptoLexique';
