@@ -1,0 +1,3 @@
+### Hardware Wallet 
+
+> Portefeuille physique ayant pour but de stocker les clés privés et donc vos cryptomonnaies de manière très sécurisée. Ce type de portefeuille est un stockage froid c'est à dire qu'il n'est pas constamment connecté à votre ordinateur ou un autre réseau et donc il n'est pas exposé aux attaques visant les portefeuilles chaud même lorqu'il est branché à votre ordinateur car votre clé privée est stockée dans une zone protégée empêchant la lecture de votre clé par quiconque tentant d'y accéder. De plus le logiciel qui fonctionne avec les hardware Wallets est souvent Open Source ( autrement dit le code source est accessible pour tout le monde ). Voici à titre d'exemple les deux marques très connues de hardware Wallets : Ledger, Trezor. 
