@@ -1,0 +1,3 @@
+### FUD 
+
+> Acronyme de "Fear, uncertainly and doubt" qui désigne une tactique de marketing ou de manipulation qui consiste à semer la peur, l'incertitude et le doute chez les investisseurs afin de les influencer à vendre leur position en général. Cette pratique peut avoir pour but de faire baisser les cours d'une cryptomonnaie ou tout simplement de nuire à un projet. Un FUD peut se référer à des rumeurs, des fausses informations ou des exagérations délibérément propagées par des individus. C'est pourquoi il est important de faire preuve de prudence en évaluant les informations relatives à la cryptomonnaie et de chercher des sources fiables pour éviter d'être influencé par des FUD.
