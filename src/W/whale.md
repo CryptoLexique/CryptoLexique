@@ -1,0 +1,3 @@
+### Whale (Baleine) 
+
+>  Personne ou entité possédant une quantité considérable de crypto-monnaies et ayant ainsi un pouvoir significatif sur le marché. Elles peuvent influencer les prix en achetant ou en vendant de grandes quantités de cryptomonnaies, mais il convient de noter que leur influence est souvent exagérée dans les médias. En effet, la majorité des transactions sur le marché des crypto-monnaies sont effectuées par de petits investisseurs, et les exchanges de cryptomonnaies ont mis en place des mesures de protection pour empêcher les baleines de manipuler les prix. Parmi ces mesures, on retrouve notamment les limites de commande et les vérifications KYC (Know Your Customer).
