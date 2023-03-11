@@ -1,0 +1,3 @@
+### Shill
+
+> Le terme "shill" est utilisé pour désigner quelqu'un qui fait la promotion d'un actif sans divulguer ses intérêts personnels dans cet actif et en utilisant souvent des méthodes trompeuses ou en exagérant les avantages de l'actif, dans le but d'inciter d'autres personnes à acheter cet actif et d'en augmenter le prix. Ce terme peut également être utilisé afin de désigner une personne faisant la promotion d'un actif de manière agressive et sans tenir compte des risques associés à cet actif. Il est donc très important de ne pas suivre tout ce que les gens disent, personne n'est saint alors faites vos propres avis sur les choses ! 
