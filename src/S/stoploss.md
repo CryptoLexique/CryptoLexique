@@ -1,0 +1,3 @@
+### Stop Loss 
+
+> Un stop loss est un ordre de vente automatique placé sur une position ouverte dans le but de limiter les pertes potentielles. Ce type d'ordre est souvent utilisé dans le trading de crypto-monnaies et autres actifs pour aider les investisseurs à protéger leur capital. Lorsque le prix d'un actif tombe en dessous d'un niveau prédéfini par l'investisseur, l'ordre de vente stop loss est automatiquement déclenché pour vendre la position et limiter les pertes. Ce mécanisme permet aux investisseurs de limiter les pertes en cas de mouvements de prix défavorables sans avoir à surveiller constamment le marché. En résumé, le stop loss est un outil de gestion des risques qui permet aux investisseurs de limiter leurs pertes de manière automatisée et efficace.
