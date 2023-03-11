@@ -1,0 +1,3 @@
+### Dump 
+
+> Un "dump" en crypto se produit lorsqu'une cryptomonnaie connaît une chute brutale et rapide de sa valeur. Ce phénomène peut être causé par une vente massive de la cryptomonnaie par les investisseurs, soit en réponse à des nouvelles négatives, soit dans le but de réaliser rapidement des profits. Les investisseurs qui ont acheté la cryptomonnaie avant le dump peuvent subir des pertes importantes, tandis que ceux qui ont vendu avant le dump peuvent réaliser des bénéfices considérables. Les dumps sont souvent imprévisibles et peuvent survenir soudainement, ce qui rend difficile pour les investisseurs de se protéger contre les pertes potentielles.
