@@ -1,3 +1,0 @@
-### Adresse Publique 
-
-> Une adresse publique en crypto-monnaie est une suite de caractères alphanumériques unique qui sert à recevoir des paiements. Elle est comparable à un numéro de compte bancaire, mais pour les transactions en crypto-monnaie. Les utilisateurs peuvent partager leur adresse publique pour recevoir des fonds, mais ils ne peuvent pas effectuer de transactions sans la clé privée correspondante. Il est important de noter que chaque type de crypto-monnaie dispose d'une adresse publique différente. Par exemple, si Bob souhaite envoyer du Bitcoin et du XRP à Alice, elle devra lui communiquer une adresse publique Bitcoin pour les fonds BTC et une adresse publique XRP pour les fonds XRP.
