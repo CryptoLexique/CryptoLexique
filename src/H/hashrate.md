@@ -1,0 +1,3 @@
+### Hash Rate 
+
+Le hash rate est une mesure de la puissance de calcul d'un réseau de crypto-monnaies. En d'autres termes, il mesure la quantité de travail que les ordinateurs effectuent pour vérifier les transactions et ajouter de nouveaux blocs à la blockchain. Plus le hash rate est élevé, plus le réseau est sécurisé car il devient plus difficile pour les hackers de réaliser une attaque qui pourrait compromettre la sécurité du réseau. Le hash rate est donc un indicateur important de la sécurité et de la stabilité d'un réseau de crypto-monnaies. Plus le hash rate est élevé, plus le réseau est résistant aux attaques malveillantes.

@@ -1,0 +1,3 @@
+### To The Moon 
+
+> "To the moon" est une expression couramment utilisée dans le monde de la crypto-monnaie pour décrire une augmentation significative et rapide du prix d'une crypto-monnaie. Cela signifie que le prix d'une crypto-monnaie augmente à un niveau tellement élevé qu'il atteint la lune. L'expression est souvent utilisée par les investisseurs ou les traders qui sont optimistes quant à la croissance future d'une crypto-monnaie et qui espèrent que son prix augmentera considérablement dans un avenir proche. Cependant, il est important de noter que la croissance rapide et importante d'une crypto-monnaie n'est pas garantie et qu'il existe également des risques de volatilité et de chute des prix.
