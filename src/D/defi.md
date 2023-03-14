@@ -1,0 +1,3 @@
+### DeFi
+
+>La DeFi (Finance Décentralisée) est un système de services financiers décentralisés qui permettent aux utilisateurs d'effectuer des transactions financières directement entre eux, sans passer par une banque ou un tiers de confiance. Les transactions sont gérées par des programmes informatiques qui s'exécutent automatiquement sur la blockchain, offrant des avantages tels que des frais de transaction moins élevés et une plus grande accessibilité financière. Cependant, il y a aussi des risques associés, tels que la volatilité des prix et la sécurité des fonds. C'est pourquoi il faut tout de même faire preuve de prudence et de recherche avant de participer à des activités DeFi.
